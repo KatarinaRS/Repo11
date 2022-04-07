@@ -5,7 +5,6 @@ var temps = [
     [29, 52, 21, 64],
     [91, 27, 31, 61],
   ];
-  
   // Only change code below this line
   function myArrayFunction() {
     var averageDayTemp = [];
