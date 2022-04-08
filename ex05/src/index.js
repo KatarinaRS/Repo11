@@ -1,18 +1,14 @@
-monitorsListArray = ["Apple", "Peach", "Berry"];
-
-// Only change code below this line
-function myMonitorsFunction() {
-  var monitorsList = [];
-
-  for (var i = 0; i < monitorsListArray.length; i++) {
-    var tempArr = [];
-    tempArr.push(monitorsListArray[i]);
-    tempArr.push(i + 1);
-    monitorsList.push(tempArr);
-  }
-  return monitorsList;
+// Create a monitorsListArray array here
+var monitorsListArray = ["Apple", "Peach", "Berry"];
+// End of monitorsListArray array
+// Create a function below this line
+function myMonitorsFunction(monitors) {
+    var monitorsList = [];
+    for (var i = 0; i < 3; i++) {
+        monitorsList.push([monitors[i], i + 1]);
+    }
+    return monitorsList;
 }
-
-console.log(myMonitorsFunction());
-// Only change code above this line
+// End of creating a function
+console.log(myMonitorsFunction(monitorsListArray));
 module.exports = myMonitorsFunction;

@@ -1,12 +1,11 @@
 var myNestedArray = [
-   ["Toblerone", 5],
-   ["Milka", 3],
+   ["Toblerone", 5]
 ]
 
 function myNestedFunction(arr) {
-    myNestedArray.push(arr);
-    return myNestedArray;
-  }
-  // Only change code above this line
-  console.log(myNestedFunction(["Toblerone", 5], ["Milka", 3]));
-  module.exports = myNestedFunction;
+  arr.push(["Milka", 3]);
+  return arr;
+}
+
+console.log(myNestedFunction(myNestedArray));
+module.exports = myNestedFunction;
